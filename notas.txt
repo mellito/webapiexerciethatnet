@@ -1,0 +1,31 @@
+funcionamiento de archivos
+Mvc model view controller
+separacion de responsabilidades
+model = clases permiten guardar datos
+view = interfaz para comunicarse con el usuario
+controller = manejar la logica que se presenta entre el usario y la vista darle click a guardar o validacion etc
+el temple de web api crea model y controller
+cada modelo tiene que esta asociado a un controlador
+
+utilizar verbos en .net
+[HttpGet]
+[HttpPost]
+[HttpPut]
+[HttpPatch]
+
+middlewares
+es la base de como funciona el tratamiento de los request
+* intrucciones de codigo que se agrega una tras otra
+* hace tratamiento de dato y devuelve un resultado
+* ejecucion atravez de capa
+* facilitan la implementacion de interceptores y filtros sobre las peticiones en una api
+* pipeline secuencia de comandos
+* los custom middleware debe estan antes de el endpoint pero despues de authorization
+
+creando un middleware
+
+loggin a api nos permite hacer trazabilidad de lo que ocurre en esta
+
+para configurar logger se puede hacer en appsettin en login loglevel
+
+servicios tiene toda la logica que se encargar de conectarse con la base de datos
